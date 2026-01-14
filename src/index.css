@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Space+Grotesk:wght@400;500;600&display=swap');
+
+:root {
+  --font-sans: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+  --font-serif: 'Fraunces', 'Times New Roman', serif;
+  --bg: #f4efe9;
+  --panel: #fff7f0;
+  --ink: #15120f;
+  --muted: #6b5c50;
+  --accent: #e45a2a;
+  --shadow: rgba(21, 18, 15, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
