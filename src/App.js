@@ -1,7 +1,8 @@
 import './App.css';
 import { useState } from 'react';
 
-const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:8000';
+const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:5000';
+const FILE_SEARCH_STORE_ID = process.env.REACT_APP_FILE_SEARCH_STORE_ID || 'eibi';
 
 function App() {
   const [question, setQuestion] = useState('');
@@ -28,7 +29,7 @@ function App() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ question: trimmed }),
+        body: JSON.stringify({ question: trimmed, id: FILE_SEARCH_STORE_ID }),
       });
 
       const data = await response.json();
